@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../virion v.png" type="image/png">
+    <title>Desenvolvimento Customizado | Virion</title>
+    <style>
+        :root {
+            --primary: #0e81ca;
+            --secondary: #0e81ca;
+            --accent: #3498DB;
+            --light: #ECF0F1;
+            --dark: #012f4b;
+        }
+        
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 3px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .btn-voltar {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        .btn-voltar i {
+            margin-right: 5px;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .content-section {
+            padding: 60px 0;
+        }
+        
+        .content-grid {
+            display: grid;
+            gap: 40px;
+        }
+        
+        .service-detail {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .service-detail h2 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .benefits-list {
+            list-style: none;
+            margin: 25px 0;
+        }
+        
+        .benefits-list li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .benefits-list li:before {
+            content: "✓";
+            color: var(--accent);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .cta {
+            background-color: var(--light);
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        .cta h2 {
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .btn-cta {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 5px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn-cta:hover {
+            background-color: #004b79;
+            transform: translateY(-3px);
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        @media (min-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!--<header>
+        <div class="container">
+            <a href="index.html" class="btn-voltar">
+                <i class="fas fa-arrow-left"></i> Voltar
+            </a>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Desenvolvimento Customizado</h1>
+            <p>Soluções de software sob medida, projetadas especificamente para atender às necessidades exclusivas do seu negócio.</p>
+        </div>
+    </section>-->
+
+    <header>
+        <div class="container">
+            <a href="../../Pag inicial/index.html" class="btn-voltar">
+                <i class="fas fa-arrow-left"></i> Voltar
+            </a>
+        </div>
+    </header>
+    
+    <section class="content-section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="service-detail">
+                    <h2>Soluções Personalizadas</h2>
+                    <p>Desenvolvemos sistemas e sites totalmente adaptados à realidade do seu negócio, garantindo que todas as funcionalidades atendam exatamente às suas necessidades operacionais e estratégicas.</p>
+                    
+                    <h3>Benefícios:</h3>
+                    <ul class="benefits-list">
+                        <li>Processos otimizados para sua operação específica</li>
+                        <li>Integração perfeita com seus sistemas existentes</li>
+                        <li>Escalabilidade para acompanhar seu crescimento</li>
+                        <li>Controle total sobre as funcionalidades e prioridades</li>
+                        <li>Vantagem competitiva com tecnologia exclusiva</li>
+                        <li>Automatizamos tarefas repetitivas, liberando você para focar no crescimento do negócio</li>
+                        <li>Reduzimos processos burocráticos, diminuindo a carga operacional da equipe</li>
+                    </ul>
+                </div>
+                
+                <div class="service-detail">
+                    <h2>Nosso Processo</h2>
+                    
+                    <h3>1. Análise de Requisitos</h3>
+                    <p>Entendemos profundamente seus processos e desafios através de workshops e entrevistas com seus times.</p>
+                    
+                    <h3>2. Projeto Arquitetural</h3>
+                    <p>Criamos uma arquitetura técnica que atende seus requisitos atuais e futuros, com as melhores tecnologias.</p>
+                    
+                    <h3>3. Desenvolvimento Iterativo</h3>
+                    <p>Desenvolvemos em ciclos curtos com demonstrações frequentes para validação e ajustes.</p>
+                    
+                    <h3>4. Implantação e Treinamento</h3>
+                    <p>Implementamos a solução e capacitamos sua equipe para uso efetivo do sistema.</p>
+                    
+                    <h3>5. Suporte Contínuo</h3>
+                    <p>Acompanhamos o desempenho e realizamos melhorias contínuas conforme sua evolução.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta">
+        <div class="container">
+            <h2>Pronto para transformar seu negócio com uma solução customizada?</h2>
+            <a href="../../Pag inicial/index.html" class="btn-cta">Fale conosco</a>
+        </div>
+        <a href="../../Política de Privacidade VIRION.pdf" class="footer-link">Política de Privacidade</a>
+    </section>
+    
+    <!--<footer>
+        <div class="container">
+            <p>&copy; 2025 VIRION Technology. Todos os direitos reservados.</p>
+        </div>
+    </footer>-->
+</body>
+</html>
