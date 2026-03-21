@@ -1,394 +1,300 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIRION Technology</title>
-    <link rel="icon" href="virion v.png" type="image/png">
-    <meta name="description" content="Transformamos ideias em realidade digital. Soluções em software que impulsionam negócios e criam experiências memoráveis.">
-    
-    <!-- Fontes & Ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- script -->
-     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-
-    <!-- Botão Whatsapp -->
-    <script src="https://cdn.jsdelivr.net/npm/floating-whatsapp-button@1.0.4/dist/whatsapp-button.min.js"></script>
-    <script>
-        new WhatsAppButton({
-            phone: '5519974151771', // Seu número com código do país
-            message: 'Olá, vim pelo site da VIRION TECH!', // Mensagem padrão
-            position: 'right', // ou 'left'
-            zIndex: 9999
-        });
-    </script>
-
-   
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VIRION Technology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="virion v.png" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
-    <header id="header">
-        <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo">
-                    <img src="virion v.png" alt="VirionTech Logo" class="logo-img">
-                    <span class="logo-text">Virion Technology</span>
-                </a>
-                <ul class="nav-links">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#features">Recursos</a></li>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-                <button class="mobile-menu-btn" id="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </nav>
+
+<div class="cur" id="cur"></div>
+<div class="cur-ring" id="cur-ring"></div>
+
+<!-- DRAWER -->
+<div class="drawer" id="drawer">
+  <button class="drawer-close" id="dc">✕</button>
+  <a href="#home"     class="dl">Início</a>
+  <a href="#features" class="dl">Recursos</a>
+  <a href="#services" class="dl">Serviços</a>
+  <a href="#about"    class="dl">Sobre</a>
+  <a href="#contact"  class="dl">Contato</a>
+  <a href="#contact"  class="dl drawer-cta">Solicitar Orçamento</a>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#home" class="logo">
+    <div class="logo-hex"><img src="virion clara.png" alt="VIRION"></div>
+    VIRION
+  </a>
+  <ul class="nav-links">
+    <li><a href="#home">Início</a></li>
+    <li><a href="#features">Recursos</a></li>
+    <li><a href="#services">Serviços</a></li>
+    <li><a href="#about">Sobre</a></li>
+    <li><a href="#contact">Contato</a></li>
+  </ul>
+  <a href="#contact" class="nav-btn">Solicitar Orçamento</a>
+  <button class="hamburger" id="hbg" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hglow1"></div>
+  <div class="hglow2"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge rev">Soluções inteligentes para um mundo digital</div>
+      <h1 class="rev">Criamos<br>para ir<br><em>ALÉM.</em></h1>
+      <p class="hero-desc rev">Soluções digitais sob medida que impulsionam negócios reais. Uma experiência única, entregamos tecnologia que compete no nível mais alto.</p>
+      <div class="hbtns rev">
+        <a href="#contact" class="btn-s">Começar Projeto</a>
+        <a href="#services" class="btn-o">Ver Serviços</a>
+      </div>
+    </div>
+    <div class="hero-vis rev">
+      <div class="ring r1"><div class="rdot rd1"></div></div>
+      <div class="ring r2"><div class="rdot rd2"></div></div>
+      <div class="ring r3"><div class="rdot rd3"></div></div>
+      <div class="hex-core"><img src="virion clara.png" alt="VIRION Technology"></div>
+      <div class="chip ca"><span class="material-symbols-outlined" id="icone-tam1">bolt</span><b> Alta Performance</b></div>
+      <div class="chip cb"><span class="material-symbols-outlined" id="icone-tam1">security</span><b> Seguro &amp; Escalável</b></div>
+      <div class="chip cc"><span class="material-symbols-outlined" id="icone-tam1">ads_click</span><b> UX Focado</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat rev"><div class="stat-n" data-target="50" data-sfx="+">50+</div><div class="stat-l">Projetos Entregues</div></div>
+  <div class="stat rev"><div class="stat-n" data-target="100" data-sfx="%">100%</div><div class="stat-l">Satisfação dos Clientes</div></div>
+  <div class="stat rev"><div class="stat-n">3×</div><div class="stat-l">Crescimento Médio</div></div>
+  <div class="stat rev"><div class="stat-n">24/7</div><div class="stat-l">Suporte Dedicado</div></div>
+</div>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+  <div class="wrap">
+    <div class="feat-head">
+      <div>
+        <div class="stag rev">Por que a Virion</div>
+        <h2 class="rev">O que nos coloca<br>em outro nível</h2>
+      </div>
+      <p class="lead rev">Nossa abordagem combina engenharia rigorosa com design que converte cada decisão técnica tem propósito de negócio.</p>
+    </div>
+    <div class="feat-grid rev">
+      <div class="fcard">
+        <div class="fnum">01</div>
+        <div class="ficon" id="icone-tam2"><span class="material-symbols-outlined">bolt</span></div>
+        <div class="ftitle">Performance Obsessiva</div>
+        <p class="fdesc">Sistemas otimizados do banco de dados ao pixel. Velocidade não é detalhe — é vantagem competitiva real.</p>
+        <div class="fline"></div>
+      </div>
+      <div class="fcard">
+        <div class="fnum">02</div>
+        <div class="ficon" id="icone-tam2"><span class="material-symbols-outlined">palette</span></div>
+        <div class="ftitle">Design Responsivo</div>
+        <p class="fdesc">Interfaces perfeitas em qualquer tela. Cada interação pensada para fidelizar usuários e converter visitantes.</p>
+        <div class="fline"></div>
+      </div>
+      <div class="fcard">
+        <div class="fnum">03</div>
+        <div class="ficon" id="icone-tam2"><span class="material-symbols-outlined">chart_data</span></div>
+        <div class="ftitle">Escalabilidade Nativa</div>
+        <p class="fdesc">Arquitetura pronta para crescer com seu negócio. Sem refatorações dolorosas, sem custos inesperados.</p>
+        <div class="fline"></div>
+      </div>
+      <div class="fcard">
+        <div class="fnum">04</div>
+        <div class="ficon" id="icone-tam2"><span class="material-symbols-outlined">handshake</span></div>
+        <div class="ftitle">Parceria Estratégica</div>
+        <p class="fdesc">Não somos só uma software house — somos um parceiro que entende do seu mercado e pensa em resultados.</p>
+        <div class="fline"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="svc-layout">
+      <div>
+        <div class="stag rev">Serviços</div>
+        <h2 class="rev">Soluções para<br>cada desafio</h2>
+        <p class="lead rev">Do MVP à plataforma enterprise, cobrimos todo o ciclo de desenvolvimento.</p>
+        <div class="svc-tabs rev">
+          <div class="svc-tab active" data-svc="custom">
+            <span class="svc-tab-name">Desenvolvimento Customizado</span>
+            <span class="svc-arr">→</span>
+          </div>
+          <div class="svc-tab" data-svc="web">
+            <span class="svc-tab-name">Plataformas Web</span>
+            <span class="svc-arr">→</span>
+          </div>
+          <div class="svc-tab" data-svc="consult">
+            <span class="svc-tab-name">Consultoria em TI</span>
+            <span class="svc-arr">→</span>
+          </div>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="particles" id="particles-js"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1>Criamos para ir <span>ALÉM!</span></h1>
-                <p>Soluções em software que impulsionam negócios e criam experiências memoráveis. Tecnologia de ponta com design excepcional.</p>
-                <div class="hero-btns">
-                    <a href="#contact" class="btn btn-primary">Comece seu projeto</a>
-                    <a href="#services" class="btn btn-secondary">Nossos serviços</a>
-                </div>
-            </div>
-            <div class="hero-image floating">
-                <img src="fundo1.png" alt="Desenvolvimento de Software">
-            </div>
+      </div>
+      <div>
+        <div class="svc-panel active" id="p-custom">
+          <div class="svc-big">01</div>
+          <h3>Desenvolvimento<br>Customizado</h3>
+          <p>Soluções de software sob medida, projetadas especificamente para atender às necessidades exclusivas do seu negócio</p>
+          <div class="tags"><span class="tag">Web Apps</span><span class="tag">APIs REST</span><span class="tag">Integrações</span><span class="tag">Automações</span></div>
+          <div class="svc-img"><span><img src="desenvolvimento.png" alt="Web Apps"></span></div>
         </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="container">
-            <div class="section-header">
-                <h2>Por que escolher a Virion Tech?</h2>
-                <p>Nossa abordagem única combina tecnologia avançada com design intuitivo para criar soluções que realmente fazem a diferença.</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3>Desempenho Excepcional</h3>
-                    <p>Desenvolvemos sistemas otimizados que garantem velocidade e eficiência mesmo nas demandas mais complexas.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3>Suporte Dedicado</h3>
-                    <p>Equipe especializada pronta para auxiliar no que for necessário, quando você precisar.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Design Responsivo</h3>
-                    <p>Interfaces perfeitas em qualquer dispositivo, garantindo a melhor experiência para seus usuários.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>Escalabilidade</h3>
-                    <p>Soluções preparadas para crescer junto com seu negócio, sem comprometer o desempenho.</p>
-                </div>
-                <!--<div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>Integração Total</h3>
-                    <p>Conectamos seu software com outras plataformas e serviços essenciais para seu negócio.</p>
-                </div>
-            
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Segurança Robust</h3>
-                    <p>Implementamos as melhores práticas de segurança para proteger seus dados e sua infraestrutura.</p>
-                </div>-->
-            </div>
+        <div class="svc-panel" id="p-web">
+          <div class="svc-big">02</div>
+          <h3>Plataformas<br>Web</h3>
+          <p>Sites institucionais, e-commerces, portais e sistemas completos com arquitetura moderna que performam em qualquer escala.</p>
+          <div class="tags"><span class="tag">E-commerce</span><span class="tag">Portais</span><span class="tag">Landing Pages</span><span class="tag">CMS</span></div>
+          <div class="svc-img"><span><img src="web.png" alt="Plataformas Web"></span></div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-container">
-                <div class="about-content">
-                    <h2>Soluções digitais que impulsionam o seu negócio</h2>
-                    <p>Somos uma empresa de tecnologia dedicada a revolucionar o mercado por meio de soluções digitais personalizadas. Nosso propósito é conectar sua empresa ao futuro, desenvolvendo sites e sistemas sob medida para empresas, escritórios, startups e lojas, sempre com eficiência, segurança e um toque de modernidade.</p>
-                    <p>Projetamos cada solução como um motor de performance - eliminando obstáculos, potencializando sua marca e entregando métricas que comprovam seu avanço no mercado digital.</p>
-                    <p>Na VIRION, seu negócio ganha não apenas tecnologia, mas um parceiro estratégico para a evolução digital. Vamos construir o futuro juntos?</p>
-                    <!--<div class="about-stats">
-                        <div class="stat-item">
-                            <div class="stat-number" id="projects-count">50+</div>
-                            <div class="stat-label">Projetos concluídos</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" id="clients-count">30+</div>
-                            <div class="stat-label">Clientes satisfeitos</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" id="experience-count">5+</div>
-                            <div class="stat-label">Anos de experiência</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" id="team-count">15+</div>
-                            <div class="stat-label">Especialistas</div>
-                        </div>
-                    </div>-->
-                </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Equipe VirionTech">
-                </div>
-            </div>
+        <div class="svc-panel" id="p-consult">
+          <div class="svc-big">03</div>
+          <h3>Consultoria<br>em TI</h3>
+          <p>Análise especializada do seu stack e roadmap estratégico. Identificamos gargalos, mapeamos oportunidades e traçamos o caminho.</p>
+          <div class="tags"><span class="tag">Auditoria</span><span class="tag">Roadmap</span><span class="tag">Arquitetura</span><span class="tag">Estratégia Digital</span></div>
+          <div class="svc-img"><span><img src="consultoria.png" alt="Consultoria em TI"></span></div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Nossos Serviços</h2>
-                <p>Oferecemos soluções completas em desenvolvimento de software para impulsionar seu negócio para o próximo nível.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3>Desenvolvimento Customizado</h3>
-                    <p>Soluções de software sob medida, projetadas especificamente para atender às necessidades exclusivas do seu negócio.</p>
-                    <a href="Saiba mais/Consultoria/consult.html" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <!--<div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Aplicativos Móveis</h3>
-                    <p>Aplicativos nativos e multiplataforma com desempenho excepcional e designs intuitivos que encantam os usuários.</p>
-                    <a href="#" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
-                </div>-->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <h3>Plataformas Web</h3>
-                    <p>Sistemas web robustos e escaláveis, com arquitetura moderna e recursos avançados para seu negócio.</p>
-                    <a href="Saiba mais/Plataformas Web/web.html" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <!--<div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <h3>Soluções em Nuvem</h3>
-                    <p>Infraestrutura e aplicações cloud para garantir disponibilidade, segurança e escalabilidade para seu negócio.</p>
-                    <a href="#" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>Automação & IA</h3>
-                    <p>Implementação de inteligência artificial e automação de processos para aumentar eficiência e reduzir custos.</p>
-                    <a href="#" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
-                </div>-->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Consultoria em TI</h3>
-                    <p>Análise especializada e planejamento estratégico para alavancar sua empresa através da tecnologia.</p>
-                    <a href="Saiba mais/Consultoria/consult.html" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="about-layout">
+      <div class="avis rev">
+        <div class="acard acard-m">
+          <div class="tline">Seu motor de<br>performance digital.</div>
+          <div class="sub">Ribeirão Preto, SP — desde 2024</div>
         </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <!--<section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>O que nossos clientes dizem</h2>
-                <p>Veja depoimentos de empresas que transformaram seus negócios com nossas soluções.</p>
-            </div>
-            <div class="testimonials-slider" id="testimonials-slider">
-                <div class="testimonial-card">
-                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente" class="testimonial-avatar">
-                    <p class="testimonial-quote">A VirionTech revolucionou nosso sistema de gestão. O software desenvolvido aumentou nossa produtividade em 40% e reduziu erros operacionais a zero.</p>
-                    <h4 class="testimonial-author">Carlos Mendes</h4>
-                    <p class="testimonial-role">CEO, Deza Confecções</p>
-                </div>
-                <div class="testimonial-card">
-                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente" class="testimonial-avatar">
-                    <p class="testimonial-quote">O website desenvolvido superou todas nossas expectativas. A equipe foi extremamente profissional e entregou antes do prazo combinado.</p>
-                    <h4 class="testimonial-author">Ana Beatriz</h4>
-                    <p class="testimonial-role">CEO, Deza Confecção</p>
-                </div>
-                <div class="testimonial-card">
-                    <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Cliente" class="testimonial-avatar">
-                    <p class="testimonial-quote">Trabalhamos com várias empresas de desenvolvimento, mas a VirionTech se destacou pela qualidade do código e atenção aos detalhes.</p>
-                    <h4 class="testimonial-author">Roberto Silva</h4>
-                    <p class="testimonial-role">CTO, Fintech Solutions</p>
-                </div>
-            </div>
+        <div class="acard acard-s">
+          <div class="row">
+            <div><div class="n">100%</div><div class="l">Projetos no prazo</div></div>
+            <div><div class="n">5★</div><div class="l">Avaliação média</div></div>
+          </div>
         </div>
-    </section>-->
-
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <h2>Pronto para transformar seu negócio?</h2>
-            <p>Entre em contato agora mesmo e vamos discutir como podemos ajudar sua empresa a alcançar novos patamares através da tecnologia.</p>
-            <a href="#contact" class="btn btn-accent">Solicitar orçamento</a>
+      </div>
+      <div class="atxt">
+        <div class="stag rev">Sobre a Virion</div>
+        <h2 class="rev">Mais que tecnologia —<br><em>evolução digital.</em></h2>
+        <p class="rev">Somos uma <strong>empresa de tecnologia</strong> dedicada a revolucionar o mercado digital com soluções personalizadas. Atendemos <strong>empresas, escritórios, startups e lojas</strong> em todo o Brasil.</p>
+        <p class="rev">Projetamos cada solução como um motor de performance — eliminando obstáculos, potencializando sua marca. Na VIRION, você ganha não apenas tecnologia, mas um <strong>parceiro estratégico</strong> para a evolução digital.</p>
+        <div class="vals rev">
+          <div class="val"><strong>Eficiência</strong><span>Código limpo, entrega ágil</span></div>
+          <div class="val"><strong>Segurança</strong><span>Padrões enterprise</span></div>
+          <div class="val"><strong>Modernidade</strong><span>Stack atualizado e escalável</span></div>
+          <div class="val"><strong>Transparência</strong><span>Comunicação direta e honesta</span></div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h2>Vamos conversar</h2>
-                    <p>Tem um projeto em mente ou quer saber mais sobre nossos serviços? Nossa equipe está pronta para ajudar.</p>
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Email</h4>
-                                <a href="mailto:contato@viriontech.com">viriontechnology@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Telefone</h4>
-                                <a href="tel:+5519974151771">+55 (19) 97415-1771</a>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Endereço</h4>
-                                <p>Ribeirão Preto, SP</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Nome</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="service">Serviço de interesse</label>
-                            <select id="service" name="service" required>
-                                <option value="">Selecione um serviço</option>
-                                <option value="custom">Desenvolvimento Customizado</option>
-                                <option value="mobile">Aplicativos Móveis</option>
-                                <option value="web">Plataformas Web</option>
-                                <!--<option value="cloud">Soluções em Nuvem</option>
-                                <option value="ai">Automação & IA</option>-->
-                                <option value="consulting">Consultoria em TI</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensagem</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
-                    </form>
-                </div>
-            </div>
+<!-- CTA BAND -->
+<div class="ctaband">
+  <div class="stag rev">Pronto para começar?</div>
+  <h2 class="rev">Vamos construir o<br>futuro <em>juntos.</em></h2>
+  <p class="rev">Tem um projeto em mente? Nossa equipe está pronta para transformar sua ideia em realidade.</p>
+  <a href="#contact" class="btn-s rev">Solicitar Orçamento Grátis →</a>
+</div>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="clayout">
+      <div class="cinfo">
+        <div class="stag rev">Contato</div>
+        <h2 class="rev">Vamos<br>conversar.</h2>
+        <p class="rev">Tem um projeto em mente ou quer saber mais? Nossa equipe está pronta para ajudar.</p>
+        <div class="citem rev">
+          <div class="cico" id="icone-tam4"><span class="material-symbols-outlined">mail</span></div>
+          <div class="ctxt"><strong>E-mail</strong><span>viriontechnology@gmail.com</span></div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-container">
-                <div class="footer-about">
-                    <div class="footer-logo">
-                        <img src="virion v.png" alt="VIRION Technology Logo" class="footer-logo-img">
-                        <span class="footer-logo-text">VIRION Technology</span>
-                    </div>
-                    <p>Especialistas em desenvolvimento de software personalizado, criando soluções tecnológicas que impulsionam negócios e criam experiências memoráveis.</p>
-                    <div class="social-links">
-                        <!--<a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>-->
-                        <a href="https://www.instagram.com/viriontech/" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <!--<a href="#" class="social-link"><i class="fab fa-github"></i></a>-->
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h3>Links Rápidos</h3>
-                    <ul>
-                        <li><a href="#home">Início</a></li>
-                        <li><a href="#features">Recursos</a></li>
-                        <li><a href="#services">Serviços</a></li>
-                        <li><a href="#about">Sobre</a></li>
-                        <li><a href="#contact">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h3>Serviços</h3>
-                    <ul>
-                        <li><a href="#">Desenvolvimento Customizado</a></li>
-                       <!--<li><a href="#">Aplicativos Móveis</a></li>-->
-                        <li><a href="#">Plataformas Web</a></li>
-                        <li><a href="#">Consultoria em TI</a></li>
-                        <!--<li><a href="#">Soluções em Nuvem</a></li>
-                        <li><a href="#">Automação & IA</a></li>-->
-                    </ul>
-                </div>
-                <!--<div class="footer-newsletter">
-                    <h3>Newsletter</h3>
-                    <p>Assine nossa newsletter para receber atualizações sobre novos serviços e artigos sobre tecnologia.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Seu email" class="newsletter-input" required>
-                        <button type="submit" class="newsletter-btn">Assinar</button>
-                    </form>
-                </div>-->
-            </div>
-            <div class="footer-bottom">
-                <p class="copyright">&copy; 2025 VIRION Technology. Todos os direitos reservados.</p>
-                <a href="Política de Privacidade VIRION.pdf" class="footer-link">Política de Privacidade</a>
-            </div>
+        <div class="citem rev">
+          <div class="cico" id="icone-tam4"><span class="material-symbols-outlined">phone</span></div>
+          <div class="ctxt"><strong>WhatsApp</strong><span>+55 (19) 97415-1771</span></div>
         </div>
-    </footer>
+        <div class="citem rev">
+          <div class="cico" id="icone-tam4"><span class="material-symbols-outlined">location_on</span></div>
+          <div class="ctxt"><strong>Localização</strong><span>Ribeirão Preto, SP — Brasil</span></div>
+        </div>
+      </div>
+      <div class="cform rev">
+        <div class="fgrow">
+          <div class="fg"><label>Nome</label><input id="nome" type="text" placeholder="Seu nome"/></div>
+          <div class="fg"><label>E-mail</label><input id="email" type="email" placeholder="seu@email.com"/></div>
+        </div>
+        <div class="fg">
+          <label>Serviço de Interesse</label>
+          <select id="servico">
+            <option value="">Selecione um serviço</option>
+            <option>Desenvolvimento Customizado</option>
+            <option>Plataformas Web</option>
+            <option>Consultoria em TI</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label>Mensagem</label>
+          <textarea id="mensagem" placeholder="Conte um pouco sobre seu projeto..."></textarea>
+        </div>
+        <button class="fsub" id="enviarBtn">Enviar Mensagem →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ftop">
+    <div class="fbrand">
+      <a href="#home" class="logo"><div class="logo-hex"><img src="virion clara.png" alt="VIRION Technology"></div>VIRION Technology</a>
+      <p>Especialistas em desenvolvimento de software personalizado, criando soluções tecnológicas que impulsionam negócios e experiências memoráveis.</p>
+
+      <p></p>
+
+      <div class="citem rev">
+          <div class="cico" id="icone-tam4"><i class="fa-brands fa-instagram"></i></div>
+          <div class="ctxt"><strong>Instagram</strong><span><a href="https://www.instagram.com/viriontech/" target="_blank">@viriontech</a></span></div>
+      </div>
 
 
-   
-    <script src="script.js"></script>
+    </div>
+    <div class="fcol">
+      <h4>Navegação</h4>
+      <a href="#home">Início</a>
+      <a href="#features">Recursos</a>
+      <a href="#services">Serviços</a>
+      <a href="#about">Sobre</a>
+      <a href="#contact">Contato</a>
+    </div>
+    <div class="fcol">
+      <h4>Serviços</h4>
+      <a href="#services">Desenvolvimento Customizado</a>
+      <a href="#services">Plataformas Web</a>
+      <a href="#services">Consultoria em TI</a>
+    </div>
+  </div>
+  <div class="fbot">
+    <p>© 2026 VIRION Technology. Todos os direitos reservados.</p>
+    <a href="Política de Privacidade VIRION.pdf">Política de Privacidade</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
